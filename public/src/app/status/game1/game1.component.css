@@ -1,0 +1,42 @@
+table {
+    border: 2px solid black;
+    border-collapse: collapse;
+    width: 50%;
+    margin: 5%;
+    padding: 4px;
+}
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+td {
+padding: 10px;
+}
+
+button {
+    width: 100px;
+    background-color: white;
+    color: black;
+    box-shadow: 2px 2px 1px black;
+}
+
+.playing {
+    width: 100px;
+    background-color: green;
+    color: white;
+    box-shadow: 2px 2px 1px black;
+}
+
+.not {
+    width: 100px;
+    background-color: red;
+    color: white;
+    box-shadow: 2px 2px 1px black;
+}
+
+.undecided {
+    width: 100px;
+    background-color: yellow;
+    color: black;
+    box-shadow: 2px 2px 1px black;
+}

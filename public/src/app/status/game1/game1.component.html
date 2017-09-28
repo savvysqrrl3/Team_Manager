@@ -1,0 +1,31 @@
+
+  <table>
+    <tr>
+      <th>Name</th>
+      <th>Actions</th>
+    </tr>
+    
+    <tr  *ngFor='let person of allPlayers'>
+      <td>{{person.name}} </td>
+      <td>
+        <button (click)='updatePlay(person._id)' 
+        *ngIf="person['game'+ gameNum] == 'Playing'" 
+        class="playing">
+          Playing
+        </button>
+        <button (click)='updatePlay(person._id)' *ngIf="person['game'+ gameNum] != 'Playing'">
+          Playing
+        </button>
+        <button (click)='updateNot(person._id)' 
+        *ngIf="person['game'+ gameNum] == 'Not Playing'" class="not">
+            Not Playing
+          </button>
+        <button (click)='updateNot(person._id)' *ngIf="person['game'+ gameNum] != 'Not Playing'">Not Playing</button>
+        <button (click)='updateUndecided(person._id)'
+        *ngIf="person['game'+ gameNum] == 'Undecided'" class="undecided">
+            Undecided
+          </button>
+        <button (click)='updateUndecided(person._id)' *ngIf="person['game'+ gameNum] != 'Undecided'"> Undecided</button>
+      </td>
+    </tr>   
+  </table>

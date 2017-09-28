@@ -1,0 +1,13 @@
+.add {
+    border: 2px solid black;
+    margin: 5%;
+    padding: 20px;
+    width: 50%;
+}
+
+#button {
+    width: 100px;
+    background-color: green;
+    color: white;
+    box-shadow: 2px 2px 1px black;
+}

@@ -1,0 +1,16 @@
+<div class="add">
+  <h3>Add Player</h3>
+  <form (submit)="formSubmit()" #addPlayer='ngForm'>
+    <h4>
+      Player Name:
+      <input type="text" name="name" required minlength="2" [(ngModel)]='newPlayer.name'>
+    </h4>
+    <h4>
+      Preferred Position:
+      <input type="text" name="preferred_position" [(ngModel)]='newPlayer.preferred_position'>
+    </h4>
+    <input type="submit" value="ADD" id="button" [disabled]='addPlayer.invalid'>
+  </form>
+
+
+</div>
